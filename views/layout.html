@@ -6,14 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>短链接生成</title>
+  <script src="https://npm.elemecdn.com/live2dnew@1.0.1/live2dnew/left/index.js"></script>
+  <link rel="stylesheet" href="https://npm.elemecdn.com/font-awesome@4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="/static/css/style.css">
   <script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.min.js"></script>
   <style>
     body:before {
-      background: url({{.WEB_BACKGROUND}}) center/cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.9;
+        z-index: -1;
+        content: "";
+        position: fixed;
+        background: url(https://d.echs.top/api) center/cover;
     }
-  </style>
+
+    .mdui-card-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+
+    }
+
+    .br,
+    #content {
+        padding: 0 !important;
+        margin: 0 !important;
+        box-shadow: unset !important;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .mdui-card+.mdui-card-content {
+        min-height: 48vh;
+    }
+
+    .mdui-theme-layout-dark .mdui-card,
+    .mdui-card {
+        background-color: #ffffff00 !important;
+
+    }
+
+    .mdui-container {
+        max-width: 900px;
+    }
+</style>
 </head>
 
 
